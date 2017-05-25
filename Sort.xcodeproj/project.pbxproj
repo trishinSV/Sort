@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A5C238C91EC357370052476A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5C238C81EC357370052476A /* main.cpp */; };
+		A5C238D21EC3574C0052476A /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5C238CF1EC3574C0052476A /* main.cpp */; };
+		A5C238D31EC3574C0052476A /* Sort.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A5C238D01EC3574C0052476A /* Sort.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,9 @@
 
 /* Begin PBXFileReference section */
 		A5C238C51EC357370052476A /* Sort */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Sort; sourceTree = BUILT_PRODUCTS_DIR; };
-		A5C238C81EC357370052476A /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A5C238CF1EC3574C0052476A /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		A5C238D01EC3574C0052476A /* Sort.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Sort.cpp; sourceTree = "<group>"; };
+		A5C238D11EC3574C0052476A /* Sort.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Sort.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +60,9 @@
 		A5C238C71EC357370052476A /* Sort */ = {
 			isa = PBXGroup;
 			children = (
-				A5C238C81EC357370052476A /* main.cpp */,
+				A5C238CF1EC3574C0052476A /* main.cpp */,
+				A5C238D01EC3574C0052476A /* Sort.cpp */,
+				A5C238D11EC3574C0052476A /* Sort.hpp */,
 			);
 			path = Sort;
 			sourceTree = "<group>";
@@ -120,7 +125,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A5C238C91EC357370052476A /* main.cpp in Sources */,
+				A5C238D21EC3574C0052476A /* main.cpp in Sources */,
+				A5C238D31EC3574C0052476A /* Sort.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
