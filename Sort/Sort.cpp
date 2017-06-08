@@ -40,9 +40,10 @@ int Sort:: BinaryInsertionSort()
     short right;
     short sred;
     int count = 0;
+    newArray();
     for (short i = 1;  i < n; i++){
         count++;
-        if (ptr[i-1] > ptr[i]){
+        if (ptr[i-1] < ptr[i]){
             x = ptr[i];
             left = 0;
             right = i-1;
@@ -50,7 +51,7 @@ int Sort:: BinaryInsertionSort()
                  count++;
                 sred = (left + right)/2;
                 count++;
-                if  (ptr[sred] < x ) left = sred + 1;
+                if  (ptr[sred] > x ) left = sred + 1;
                 else  right = sred - 1;
             } while (left <= right);
             for (short j = i-1; j>=left; j--)
@@ -64,6 +65,7 @@ int Sort:: BinaryInsertionSort()
 
 int Sort:: BubbleSort2 ()
 {
+    newArray();
     int i=1, j, x, k;	//i=1 - ÎÂ‚‡ˇ „‡ÌËˆ‡ Ò‡‚ÌË‚‡ÂÏ˚ı ˝ÎÂÏÂÌÚÓ‚
     int counter = 0;
     do
@@ -71,11 +73,11 @@ int Sort:: BubbleSort2 ()
         k = 0;	//ÔËÁÌ‡Í ÓÚÒÛÚÒÚ‚Ëˇ Ó·ÏÂÌÓ‚
         for (j=n-1; j>=i; j--)
             counter++;
-            if (a[j-1]>a[j])
+            if (ptr[j-1]>ptr[j])
             {
-                x = a[j-1];
-                a[j-1] = a[j];
-                a[j] = x;
+                x = ptr[j-1];
+                ptr[j-1] = ptr[j];
+                ptr[j] = x;
                 k = j;	//Á‡ÔÓÏËÌ‡ÂÏ ÏÂÒÚÓ ÔÓÒÎÂ‰ÌÂ„Ó Ó·ÏÂÌ‡
             }
         i = k;	//Á‡ÔÓÏËÌ‡ÂÏ ÏÂÒÚÓ ÔÓÒÎÂ‰ÌÂ„Ó Ó·ÏÂÌ‡ Í‡Í Ô‡‚Û˛ „‡ÌËˆÛ

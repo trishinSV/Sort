@@ -18,7 +18,6 @@ int main() {
 
     system("clear");
 
-
     for (int k = 0; k<4; k++) {
         start = num[k];
         
@@ -28,6 +27,7 @@ int main() {
     for (int i =0; i<3; i++)
         {
         check.createArray(i);
+            // check.printArray();
         switch (i) {
             case 0:
                 cout << "\nНеупорядоченный массив\n";
@@ -40,17 +40,10 @@ int main() {
             default:
                 break;
         }
-            cout<<"Бинарными вставками сортировка:\t\t\t"<<check.BinaryInsertionSort()<<endl;// nlogn сравнений n^2 общая
-
+               cout<<"Бинарными вставками сортировка:\t\t\t"<<check.BinaryInsertionSort()<<endl;// nlogn сравнений n^2 общая
             cout<<"Пузырьковая с фисацией сортировка:\t\t\t"<<check.BubbleSort2()<<endl;// nlogn сравнений n^2 общая
-
-            //   cout<<"Шейкерная сортировка:\t\t\t"<< check.ShakerSort()<<endl;   // n-1 // (n^2-n)/2
-
-    cout<<"Пирамидальная сортировка:\t\t"<< check.HeapSort()<<endl; //nlogn
-        
-            // cout<<"Рекурсивная быстрая сортировка:\t\t"<< check.QuickSortRecursive()<<endl; // nlogn
-            
-    cout<<"Быстрая сортировка qsort(): \t\t"<< check.quickSort()<<endl;  // nlogn
+                      cout<<"Пирамидальная сортировка:\t\t\t\t\t"<< check.HeapSort()<<endl; //nlogn
+                   cout<<"Быстрая сортировка qsort(): \t\t\t\t"<< check.quickSort()<<endl;  // nlogn
 
         }
     }

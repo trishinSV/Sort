@@ -33,7 +33,7 @@ public:
     static int compare(const void * x1, const void * x2)
     {
         counter++;
-        return  *(int*)x1 - *(int*)x2;
+        return  -(*(int*)x1 - *(int*)x2);
     }
 };
 
